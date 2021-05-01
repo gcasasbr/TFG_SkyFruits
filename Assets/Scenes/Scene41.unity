@@ -620,6 +620,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4373267897981257591, guid: b83303315378b7b44bac4ce294e06335,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -236
+      objectReference: {fileID: 0}
     - target: {fileID: 4373267898112172341, guid: b83303315378b7b44bac4ce294e06335,
         type: 3}
       propertyPath: m_Layer
@@ -799,6 +804,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: pantallaJugar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373267898822474403, guid: b83303315378b7b44bac4ce294e06335,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373267898822474403, guid: b83303315378b7b44bac4ce294e06335,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373267898822474403, guid: b83303315378b7b44bac4ce294e06335,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -137
       objectReference: {fileID: 0}
     - target: {fileID: 4373267898942981396, guid: b83303315378b7b44bac4ce294e06335,
         type: 3}
