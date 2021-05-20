@@ -75,6 +75,7 @@ public class FruitMovment : MonoBehaviour
     public GameObject contadorLlimona;
     public GameObject contadorTaronja;
 
+    public GameObject labelX2;
 
     public void Parar2()
     {
@@ -149,13 +150,25 @@ public class FruitMovment : MonoBehaviour
     }
 
        
+    void desapareixer()
+    {
+        labelX2.GetComponent<Text>().text = "";
+    }
+
+
+    void contarpunts()
+    {
+        GameController.GetComponent<GameController>().punts = GameController.GetComponent<GameController>().punts * 2;
+    }
     
     public void Contar()
     {
-       
-        GameController.GetComponent<GameController>().punts = GameController.GetComponent<GameController>().punts * 2;
-                       
-
+        if (labelX2 != null)
+        {
+            labelX2.GetComponent<Text>().text = "x2";
+            Invoke("contarpunts", 0.25f);
+            Invoke("desapareixer", 1f);
+        }
     }
 
     public void destruir2()
@@ -232,6 +245,13 @@ public class FruitMovment : MonoBehaviour
                 else
                 {
                     if (this.gameObject.tag.Equals("Bombolla")) GameController.GetComponent<GameController>().punts = GameController.GetComponent<GameController>().punts - 50;
+                    if (labelX2 != null)
+                    {
+                        labelX2.GetComponent<Text>().text = "-50";
+                        //Invoke("contarpunts50", 0.25f);
+                        Invoke("desapareixer", 1f);
+                    }
+
                     if (this.gameObject.tag.Equals("Tancat"))
                     {
                         GameController.GetComponent<GameController>().punts = GameController.GetComponent<GameController>().punts + 10;
@@ -325,6 +345,8 @@ public class FruitMovment : MonoBehaviour
         contadorMelo= GameObject.Find("Fruit_Green_1 (4) Variant");
         contadorTomaquet= GameObject.Find("Fruit_Green_2 (13) Variant");
         contadorTaronja= GameObject.Find("Fruit_Green_2 (14)");
+
+        labelX2 = GameObject.Find("TextX2");
     }
 
     
@@ -342,6 +364,12 @@ public class FruitMovment : MonoBehaviour
     public void Contar2()
     {
         GameController.GetComponent<GameController>().punts = GameController.GetComponent<GameController>().punts - 50;
+        if (labelX2 != null)
+        {
+            labelX2.GetComponent<Text>().text = "-50";
+            //Invoke("contarpunts50", 0.25f);
+            Invoke("desapareixer", 1f);
+        }
         desplasar = false;
         chest.transform.GetChild(1).gameObject.SetActive(false);
         chest.transform.GetChild(1).gameObject.transform.position = posicio;
