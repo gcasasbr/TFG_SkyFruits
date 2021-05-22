@@ -28,12 +28,20 @@ public class GUIController : MonoBehaviour
 
     public int idiomaSeleccionat;
     public int pantalla;
+    public bool wait;
 
-   
+   void espera()
+    {
+        wait = false;
+
+    }
+
 
     void Start()
     {
-
+        wait = true;
+        
+        Invoke("espera", 1.5f);
         
         text1 = GameObject.Find("Play");
         text2 = GameObject.Find("IdiomaText");
@@ -106,25 +114,24 @@ public class GUIController : MonoBehaviour
 
     public void Opcions()
     {
-        
-        SceneManager.LoadScene(1);
+        if(!wait) SceneManager.LoadScene(1);
     }
 
     public void Sortir()
     {
-        Application.Quit();
+        if(!wait) Application.Quit();
     }
 
     public void Jugar()
     {
-       SceneManager.LoadScene(7);
+       if(!wait) SceneManager.LoadScene(7);
     }
 
     
     public void ComJugar()
     {
 
-        SceneManager.LoadScene(46);
+        if(!wait) SceneManager.LoadScene(46);
     }
 
 }
