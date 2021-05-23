@@ -121,6 +121,84 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &217198905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 217198906}
+  - component: {fileID: 217198908}
+  - component: {fileID: 217198907}
+  m_Layer: 5
+  m_Name: Text (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &217198906
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217198905}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -999.9994}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 622248786}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.59998, y: -157}
+  m_SizeDelta: {x: 267.8838, y: 40.70752}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &217198907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217198905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 48
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &217198908
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217198905}
+  m_CullTransparentMesh: 0
 --- !u!1001 &240491773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -584,7 +662,7 @@ PrefabInstance:
     - target: {fileID: 1650730132431937064, guid: bccc91070f05dd140a0aa61ba1459598,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 27.277939
       objectReference: {fileID: 0}
     - target: {fileID: 1650730132431937064, guid: bccc91070f05dd140a0aa61ba1459598,
         type: 3}
@@ -594,12 +672,17 @@ PrefabInstance:
     - target: {fileID: 1650730132431937064, guid: bccc91070f05dd140a0aa61ba1459598,
         type: 3}
       propertyPath: m_SizeDelta.x
+      value: 133.46706
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650730132431937065, guid: bccc91070f05dd140a0aa61ba1459598,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1650730132431937071, guid: bccc91070f05dd140a0aa61ba1459598,
         type: 3}
       propertyPath: m_Text
-      value: LOADING...
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1650730132431937071, guid: bccc91070f05dd140a0aa61ba1459598,
         type: 3}
@@ -723,26 +806,6 @@ PrefabInstance:
       objectReference: {fileID: 870549061}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bccc91070f05dd140a0aa61ba1459598, type: 3}
---- !u!1 &665348236 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1650730132431937065, guid: bccc91070f05dd140a0aa61ba1459598,
-    type: 3}
-  m_PrefabInstance: {fileID: 665348235}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &665348237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 665348236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalFit: 2
-  m_VerticalFit: 2
 --- !u!1001 &743065582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1166,7 +1229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d4ba339e77b10847802cf32ed07f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text1: {fileID: 665348236}
+  text1: {fileID: 217198905}
   text2: {fileID: 1571536953}
   idiomaSeleccionat: 0
   inici: 0
@@ -1253,9 +1316,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Els angelets de la fruita s\u2019han escapat del cel aprofitant un descuit
-    teu com a guardi\xE0 de les portes i ara es troben repartides pel m\xF3n. Haur\xE0s
-    d\u2018atrapar-les abans no se n\u2019adoni ning\xFA!!!"
+  m_Text: 
 --- !u!222 &1571536956
 CanvasRenderer:
   m_ObjectHideFlags: 0
